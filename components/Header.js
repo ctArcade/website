@@ -11,7 +11,7 @@ export default function Header() {
 
    let navs = Object.keys(navMap).map((btn, i) => (
       <Link href={navMap[btn]} key={i}>
-         <div className="cursor-pointer">{btn}</div>
+         <div className="cursor-pointer p-2 text-xl hover:bg-tBlue rounded transition-colors duration-100">{btn}</div>
       </Link >
    ));
 
@@ -23,7 +23,7 @@ export default function Header() {
             </div>
          </Link>
 
-         <div className="flex space-y-2 mx-auto lg:m-0 md:space-x-12 items-center font-semibold flex-col md:flex-row">
+         <div className="flex md:space-y-0 lg:space-y-0 space-y-2 mx-auto lg:m-0 md:space-x-12 items-center font-semibold flex-col md:flex-row">
             {navs}
          </div>
       </div >

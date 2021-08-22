@@ -2,10 +2,11 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
-      bgBlue: "#12123cff"
-    },
     extend: {
+      colors: {
+        bgBlue: "#12123cff",
+        tBlue: "#4367d7",
+      },
     },
   },
   variants: {
