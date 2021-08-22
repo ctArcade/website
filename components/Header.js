@@ -9,17 +9,17 @@ export default function Header() {
       "🐱 GitHub": "https://github.com/ctArcade",
    }
 
-   let navs = Object.keys(navMap).map(btn => (
-      <Link href={navMap[btn]}>
+   let navs = Object.keys(navMap).map((btn, i) => (
+      <Link href={navMap[btn]} key={i}>
          <div className="cursor-pointer">{btn}</div>
-      </Link>
+      </Link >
    ));
 
    return (
       <div className="w-full py-14 flex-col lg:flex-row flex place-content-between mb-10 md:mb-14 lg:mb-20">
          <Link href="/">
             <div className="flex justify-center cursor-pointer">
-               <Image src="/assets/logoTransparent.svg" width="130" height="130" />
+               <Image src="/assets/logoTransparent.svg" alt="ctArcade logo" width="130" height="130" />
             </div>
          </Link>
 
