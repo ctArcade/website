@@ -4,7 +4,7 @@ import Header from '../components/Header'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="root-cont bg-bgBlue min-h-screen">
+    <div className="root-cont bg-bgBlue min-h-screen text-textWhite">
       <Head>
         <title>Ct Arcade</title>
         <meta name="description" content="The social platform for your next ct.js game!" />

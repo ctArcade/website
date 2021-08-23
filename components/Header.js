@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Button from './Button';
 
 export default function Header() {
    let navMap = {
@@ -10,9 +11,7 @@ export default function Header() {
    }
 
    let navs = Object.keys(navMap).map((btn, i) => (
-      <Link href={navMap[btn]} key={i}>
-         <div className="cursor-pointer p-2 text-xl hover:bg-tBlue rounded transition-colors duration-100">{btn}</div>
-      </Link >
+      <Button href={navMap[btn]} key={i}>{btn}</Button>
    ));
 
    return (

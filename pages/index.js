@@ -1,15 +1,20 @@
-import Link from 'next/link'
+import Button from '../components/Button'
+import PgAbout from '../components/PgAbout'
+import Image from 'next/image'
 
 export default function Home() {
    return (
-      <div className="w-full text-center">
-         {/* get rid of link later */}
-         <Link href="/somePage">
-            <h1 className="text-6xl font-bold">The platform for your next ct.js game!</h1>
-         </Link>
-
-         <div className="text-xl py-7 leading-9 max-w-5xl mx-auto">
+      <div>
+         <PgAbout header="The platform for your next ct.js game!">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci lacus, blandit vel efficitur in, dignissim id justo. Sed interdum mollis ipsum, et dapibus tortor convallis quis. Curabitur interdum mattis sem, quis vehicula lectus. Maecenas varius sodales vulputate. Suspendisse tincidunt varius purus.
+         </PgAbout>
+
+         <div className="grid place-content-center">
+            <Button href="/somePage" className="px-8 py-4 bg-tBlue mx-auto my-8">
+               <div>Get started</div>
+
+               <Image src="/assets/rightArrow.svg" width="22" height="22" />
+            </Button>
          </div>
       </div>
    )

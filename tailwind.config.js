@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         bgBlue: "#12123cff",
         tBlue: "#4367d7",
+        textWhite: "#eeeeee",
       },
     },
   },
