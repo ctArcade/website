@@ -1,4 +1,4 @@
-export default function PgAbout({ header, children }) {
+export default function PageAbout({ header, children }) {
    return (
       <div className="w-full text-center">
          <h1 className="text-6xl font-bold">

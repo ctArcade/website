@@ -1,13 +1,13 @@
 import Button from '../components/Button'
-import PgAbout from '../components/PgAbout'
+import PageAbout from '../components/PageAbout'
 import Image from 'next/image'
 
 export default function Home() {
    return (
       <div>
-         <PgAbout header="The platform for your next ct.js game!">
+         <PageAbout header="The platform for your next ct.js game!">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci lacus, blandit vel efficitur in, dignissim id justo. Sed interdum mollis ipsum, et dapibus tortor convallis quis. Curabitur interdum mattis sem, quis vehicula lectus. Maecenas varius sodales vulputate. Suspendisse tincidunt varius purus.
-         </PgAbout>
+         </PageAbout>
 
          <div className="grid place-content-center">
             <Button href="/somePage" className="px-8 py-4 bg-tBlue mx-auto my-8">
