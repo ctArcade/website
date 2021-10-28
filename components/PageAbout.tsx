@@ -1,4 +1,14 @@
-export default function PageAbout({ header, contStyle, descStyle, headStyle, children }) {
+import { NextPage } from "next"
+
+type props = {
+   header: String,
+   contStyle: String,
+   descStyle: String,
+   headStyle: String,
+   children: NextPage,
+}
+
+export default function PageAbout({ header, contStyle, descStyle, headStyle, children }: props) {
    return (
       <div className={`w-full text-center ${contStyle}`}>
          <h1 className={`text-6xl font-bold ${headStyle}`}>

@@ -10,7 +10,7 @@ export default function Header() {
       "🐱 GitHub": "https://github.com/ctArcade",
    }
 
-   let navs = Object.keys(navMap).map((btn, i) => (
+   let navs = Object.keys(navMap).map((btn: any, i: Number) => (
       <Button href={navMap[btn]} key={i}>{btn}</Button>
    ));
 
