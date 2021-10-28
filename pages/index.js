@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Home() {
    return (
       <div>
-         <PageAbout header="The platform for your next ct.js game!">
+         <PageAbout header="The platform for your next ct.js game!" className="bg-blue-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci lacus, blandit vel efficitur in, dignissim id justo. Sed interdum mollis ipsum, et dapibus tortor convallis quis. Curabitur interdum mattis sem, quis vehicula lectus. Maecenas varius sodales vulputate. Suspendisse tincidunt varius purus.
          </PageAbout>
 
