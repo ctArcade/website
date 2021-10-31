@@ -1,11 +1,10 @@
-import { NextPage } from "next"
-
 type props = {
-   header: String,
-   contStyle: String,
-   descStyle: String,
-   headStyle: String,
-   children: NextPage,
+   header: string,
+   contStyle?: string,
+   descStyle?: string,
+   headStyle?: string,
+   className?: string,
+   children?: any,
 }
 
 export default function PageAbout({ header, contStyle, descStyle, headStyle, children }: props) {

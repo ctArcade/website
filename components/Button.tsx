@@ -1,10 +1,9 @@
-import type { NextPage } from 'next'
 import Link from 'next/link'
 
 type props = {
-   href: URL,
-   className: String,
-   children: NextPage,
+   href: string,
+   className?: string,
+   children?: any,
 }
 
 export default function Button({ href, className: twStyle, children }: props) {

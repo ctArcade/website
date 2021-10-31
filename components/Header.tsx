@@ -3,14 +3,18 @@ import Link from 'next/link'
 import Button from './Button';
 
 export default function Header() {
-   let navMap = {
+   interface StrMap {
+      [index: string]: string;
+   }
+
+   let navMap: StrMap = {
       "📖 Docs": "/docs",
       "🧙‍♂️ CLI": "/cli",
       "☁ API": "/api",
       "🐱 GitHub": "https://github.com/ctArcade",
    }
 
-   let navs = Object.keys(navMap).map((btn: any, i: Number) => (
+   let navs = Object.keys(navMap).map((btn: string, i: number) => (
       <Button href={navMap[btn]} key={i}>{btn}</Button>
    ));
 
