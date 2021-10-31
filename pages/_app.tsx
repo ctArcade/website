@@ -1,14 +1,9 @@
-import type { NextPage } from 'next'
+import type { AppProps } from 'next/app'
 import '../styles/globals.css'
 import Head from 'next/head'
 import Header from '../components/Header'
 
-type props = {
-  Component: NextPage,
-  pageProps: any,
-}
-
-function MyApp({ Component, pageProps }: props) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="root-cont bg-bgBlue min-h-screen text-textWhite">
       <Head>
