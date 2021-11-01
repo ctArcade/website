@@ -1,4 +1,4 @@
-type props = {
+type Props = {
    header: string,
    contStyle?: string,
    descStyle?: string,
@@ -7,7 +7,7 @@ type props = {
    children?: any,
 }
 
-export default function PageAbout({ header, contStyle, descStyle, headStyle, children }: props) {
+const PageAbout = ({ header, contStyle, descStyle, headStyle, children }: Props) => {
    return (
       <div className={`w-full text-center ${contStyle}`}>
          <h1 className={`text-6xl font-bold ${headStyle}`}>
@@ -20,3 +20,5 @@ export default function PageAbout({ header, contStyle, descStyle, headStyle, chi
       </div>
    )
 }
+
+export default PageAbout;

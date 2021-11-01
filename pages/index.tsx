@@ -1,8 +1,9 @@
-import Button from '../components/Button'
-import PageAbout from '../components/PageAbout'
-import Image from 'next/image'
+import Button from "../components/Button"
+import PageAbout from "../components/PageAbout"
+import Image from "next/image"
+import type { NextPage } from "next"
 
-export default function Home() {
+const Home: NextPage = () => {
    return (
       <div>
          <PageAbout header="The platform for your next ct.js game!" className="bg-blue-500">
@@ -19,3 +20,5 @@ export default function Home() {
       </div>
    )
 }
+
+export default Home;

@@ -1,7 +1,8 @@
-import PageAbout from "../components/PageAbout";
-import Button from "../components/Button";
+import PageAbout from "../components/PageAbout"
+import Button from "../components/Button"
+import { NextPage } from "next"
 
-export default function NotFound() {
+const NotFound: NextPage = () => {
    return (
       <div className="pg-about">
          <PageAbout header="404 Not Found">
@@ -14,3 +15,5 @@ export default function NotFound() {
       </div>
    )
 }
+
+export default NotFound;

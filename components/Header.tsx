@@ -1,17 +1,16 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import Button from './Button';
+import Image from "next/image"
+import Link from "next/link"
+import Button from "./Button"
+interface StrMap {
+   [index: string]: string;
+}
 
-export default function Header() {
-   interface StrMap {
-      [index: string]: string;
-   }
-
+const Header = () => {
    let navMap: StrMap = {
       "📖 Docs": "/docs",
       "🧙‍♂️ CLI": "/cli",
       "☁ API": "/api",
-      "🐱 GitHub": "https://github.com/ctArcade",
+      "🐱 Repo": "https://github.com/ctArcade",
    }
 
    let navs = Object.keys(navMap).map((btn: string, i: number) => (
@@ -32,3 +31,5 @@ export default function Header() {
       </div >
    )
 }
+
+export default Header;
